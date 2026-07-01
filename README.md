@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/qpx_logo.png" alt="QPX Logo" width="350"/>
+  <img src="https://raw.githubusercontent.com/punitxdev/QPX/main/docs/assets/qpx_logo.png" alt="QPX Logo" width="350"/>
 </p>
 
 # QPX Tabular
