@@ -1,6 +1,6 @@
-# API Reference: `kpx.Tabular`
+# API Reference: `qpx.Tabular`
 
-This document serves as the comprehensive API reference for the `kpx.Tabular` wrapper class. Below you will find the exact method signatures, parameters, and return types for every function available.
+This document serves as the comprehensive API reference for the `qpx.Tabular` wrapper class. Below you will find the exact method signatures, parameters, and return types for every function available.
 
 ---
 

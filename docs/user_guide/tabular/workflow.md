@@ -1,6 +1,6 @@
 # Recommended Workflow
 
-To get the absolute best out of **KPX Tabular**, we recommend following a structured workflow that mirrors the actual machine learning lifecycle. KPX is designed to drastically minimize the code you write at each of these steps.
+To get the absolute best out of **QPX Tabular**, we recommend following a structured workflow that mirrors the actual machine learning lifecycle. QPX is designed to drastically minimize the code you write at each of these steps.
 
 Here is the ideal path from raw dataset to ML-ready data:
 
@@ -19,7 +19,7 @@ Once you know the broad strokes, look closer at the distributions and correlatio
 - **Spot Multicollinearity**: Run `tab.feature_cluster_map()` and `tab.multicollinearity_report()`. If you see tight clusters of highly correlated features, let the preprocessor know it needs to drop them.
 
 ## 3. Automated Preprocessing
-Now that you understand the dataset's flaws, let KPX fix them. 
+Now that you understand the dataset's flaws, let QPX fix them. 
 
 For most standard tabular datasets, a single call to `auto_preprocess()` is all you need:
 

@@ -1,6 +1,6 @@
 # Analytical Profiling (Summary)
 
-The first step in any data science workflow is understanding the data you are working with. The **Analytical Profiling** methods in KPX Tabular provide a suite of tools to instantly evaluate the shape, data types, and structural health of your dataset without writing boilerplate pandas code.
+The first step in any data science workflow is understanding the data you are working with. The **Analytical Profiling** methods in QPX Tabular provide a suite of tools to instantly evaluate the shape, data types, and structural health of your dataset without writing boilerplate pandas code.
 
 ## Available Methods at a Glance
 
@@ -166,7 +166,7 @@ Returns a high-level, overarching summary of the dataset as a pandas DataFrame. 
 **Example:**
 ```python
 import pandas as pd
-from kpx import Tabular
+from qpx import Tabular
 
 df = pd.read_csv("data.csv")
 tab = Tabular(df)
@@ -321,7 +321,7 @@ print(json.dumps(ready, indent=2))
 **Example (When Not Safe):**
 ```python
 # Assuming a dataset that has structural issues
-bad_tab = kpx.Tabular(pd.read_csv("messy_data.csv"))
+bad_tab = qpx.Tabular(pd.read_csv("messy_data.csv"))
 not_ready = bad_tab.ml_readiness()
 print(json.dumps(not_ready, indent=2))
 ```

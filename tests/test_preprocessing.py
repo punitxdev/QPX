@@ -1,5 +1,5 @@
 import pytest
-from kpx.tabular import preprocessing
+from qpx.tabular import preprocessing
 
 def test_boolify(dirty_df):
     boolified = preprocessing.boolify(dirty_df)

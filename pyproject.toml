@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "kpx"
+name = "qpx"
 version = "0.1.0"
 description = "A powerful, production-ready tabular data preprocessing and visualization library."
 readme = "README.md"
@@ -36,9 +36,9 @@ dev = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/punitxdev/KPX"
-"Bug Tracker" = "https://github.com/punitxdev/KPX/issues"
+"Homepage" = "https://github.com/punitxdev/QPX"
+"Bug Tracker" = "https://github.com/punitxdev/QPX/issues"
 
 [tool.setuptools.packages.find]
-include = ["kpx*"]
+include = ["qpx*"]
 exclude = ["site*", "tests*", "docs*"]

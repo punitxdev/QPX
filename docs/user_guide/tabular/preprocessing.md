@@ -1,6 +1,6 @@
 # Automated Preprocessing (Preprocessing)
 
-Data cleaning and feature engineering are often the most time-consuming parts of the data science workflow. The **Automated Preprocessing** methods in KPX Tabular provide robust, production-ready pipelines that automatically handle everything from column sanitization and type casting to missing value imputation, categorical encoding, and memory compression.
+Data cleaning and feature engineering are often the most time-consuming parts of the data science workflow. The **Automated Preprocessing** methods in QPX Tabular provide robust, production-ready pipelines that automatically handle everything from column sanitization and type casting to missing value imputation, categorical encoding, and memory compression.
 
 ## Available Methods at a Glance
 
@@ -36,7 +36,7 @@ Cleans up and standardizes column names. It removes special characters, strips l
 ```python
 import pandas as pd
 import json
-from kpx import Tabular
+from qpx import Tabular
 
 df = pd.read_csv("data.csv")
 tab = Tabular(df)
@@ -318,7 +318,7 @@ print(json.dumps(report, indent=2))
 ---
 
 ### `auto_preprocess()`
-The flagship preprocessing method of KPX Tabular. It runs an end-to-end, highly configurable preprocessing pipeline on your dataset. After applying this function, also check the dataset again and modify as per your need.
+The flagship preprocessing method of QPX Tabular. It runs an end-to-end, highly configurable preprocessing pipeline on your dataset. After applying this function, also check the dataset again and modify as per your need.
 
 > [!IMPORTANT]
 > **The `auto_preprocess` Pipeline runs in this exact order:**

@@ -1,10 +1,10 @@
 # Installation Guide
 
-Thank you for choosing **KPX**. This guide will walk you through the installation process to get KPX Tabular up and running on your machine.
+Thank you for choosing **QPX**. This guide will walk you through the installation process to get QPX Tabular up and running on your machine.
 
 ## Prerequisites
 
-KPX requires **Python 3.8 or higher**. Before installing, ensure you have Python installed by running:
+QPX requires **Python 3.8 or higher**. Before installing, ensure you have Python installed by running:
 
 ```bash
 python --version
@@ -12,30 +12,30 @@ python --version
 
 ### Core Dependencies
 
-KPX heavily relies on the following core libraries for its data manipulation and calculation capabilities:
+QPX heavily relies on the following core libraries for its data manipulation and calculation capabilities:
 - `pandas`
 - `numpy`
 
-*(Note: These will be installed automatically when you install KPX via pip.)*
+*(Note: These will be installed automatically when you install QPX via pip.)*
 
 ## Installation Methods
 
 ### 1. Install via pip (Recommended)
 
-If KPX is published to PyPI or you have a compiled wheel, you can install it directly using pip:
+If QPX is published to PyPI or you have a compiled wheel, you can install it directly using pip:
 
 ```bash
-pip install kpx
+pip install qpx
 ```
 
 ### 2. Install from Source (Development)
 
-If you want to try the latest development version, or if you plan to contribute to the KPX project, you can install it from source.
+If you want to try the latest development version, or if you plan to contribute to the QPX project, you can install it from source.
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/punit-kashyap/kpx.git
-   cd kpx
+   git clone https://github.com/punit-kashyap/qpx.git
+   cd qpx
    ```
 
 2. **Install the package in editable mode**:
@@ -46,11 +46,11 @@ If you want to try the latest development version, or if you plan to contribute 
 
 ## Verifying the Installation
 
-To verify that KPX was installed successfully, open a Python interactive shell or a Jupyter Notebook and try importing it:
+To verify that QPX was installed successfully, open a Python interactive shell or a Jupyter Notebook and try importing it:
 
 ```python
 import pandas as pd
-from kpx import Tabular
+from qpx import Tabular
 
 # Create a simple test dataframe
 df = pd.DataFrame({"Test_Col": [1, 2, 3]})
@@ -58,11 +58,11 @@ df = pd.DataFrame({"Test_Col": [1, 2, 3]})
 # Initialize the Tabular class
 tab = Tabular(df)
 
-print("KPX Tabular loaded successfully!")
+print("QPX Tabular loaded successfully!")
 ```
 
 If the code runs without any `ModuleNotFoundError`, you are ready to go!
 
 ## Next Steps
 
-Now that you have KPX installed, head over to the [Index](index.md) to learn about the core philosophy of KPX and explore its powerful automated preprocessing features.
+Now that you have QPX installed, head over to the [Index](index.md) to learn about the core philosophy of QPX and explore its powerful automated preprocessing features.

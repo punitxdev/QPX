@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch
-from kpx.tabular import visuals
+from qpx.tabular import visuals
 
 @patch("matplotlib.pyplot.show")
 def test_corr_map(mock_show, clean_df, edge_case_df):

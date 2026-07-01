@@ -1,6 +1,6 @@
 # Data Visualization (Visuals)
 
-Data visualization is crucial for exploring relationships, distributions, and underlying patterns within your dataset. The **Visuals** methods in KPX Tabular provide robust, production-ready plotting functions designed to instantly generate high-quality insights with minimal code.
+Data visualization is crucial for exploring relationships, distributions, and underlying patterns within your dataset. The **Visuals** methods in QPX Tabular provide robust, production-ready plotting functions designed to instantly generate high-quality insights with minimal code.
 
 ## Available Methods at a Glance
 

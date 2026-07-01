@@ -52,7 +52,7 @@ body {
 }
 
 /* Dark Mode Logo Adjustments */
-[data-md-color-scheme="slate"] img[alt="KPX Logo"],
+[data-md-color-scheme="slate"] img[alt="QPX Logo"],
 [data-md-color-scheme="slate"] .md-logo img {
   filter: invert(1) hue-rotate(180deg) brightness(1.5);
 }

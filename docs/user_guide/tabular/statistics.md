@@ -1,6 +1,6 @@
 # Statistical Diagnostics (Statistics)
 
-Once you understand the basic shape of your data, the next step is to dive deeper into the mathematical and categorical properties of your features. The **Statistical Diagnostics** methods in KPX Tabular provide detailed metrics, distribution insights, and collinearity checks to help you understand the statistical health of your dataset.
+Once you understand the basic shape of your data, the next step is to dive deeper into the mathematical and categorical properties of your features. The **Statistical Diagnostics** methods in QPX Tabular provide detailed metrics, distribution insights, and collinearity checks to help you understand the statistical health of your dataset.
 
 ## Available Methods at a Glance
 
@@ -24,7 +24,7 @@ Returns a consolidated, high-level snapshot of key dataset metrics, ranging from
 **Example:**
 ```python
 import pandas as pd
-from kpx import Tabular
+from qpx import Tabular
 
 df = pd.read_csv("data.csv")
 tab = Tabular(df)
@@ -116,8 +116,8 @@ Detects and summarizes **statistical outliers** in all numerical columns.
 > [!TIP]
 > **What is an Outlier?** An outlier is a data point that is abnormally distant from the rest of the data. For example, if you are looking at customer ages ranging from 18 to 65, an age of `142` is an outlier.
 > 
-> **How KPX finds them (IQR Method):** 
-> KPX uses the Interquartile Range (IQR). It finds the middle 50% of your data (between the 25th percentile `Q1` and 75th percentile `Q3`). Any value that falls unusually far below `Q1` (the `lower bound`) or unusually far above `Q3` (the `upper bound`) is flagged as an outlier.
+> **How QPX finds them (IQR Method):** 
+> QPX uses the Interquartile Range (IQR). It finds the middle 50% of your data (between the 25th percentile `Q1` and 75th percentile `Q3`). Any value that falls unusually far below `Q1` (the `lower bound`) or unusually far above `Q3` (the `upper bound`) is flagged as an outlier.
 
 **Parameters:**
 - `detailed` *(bool, default=False)*: If `True`, the output includes the exact calculations used to find the outliers (`Q1`, `Q3`, and `IQR`).
@@ -143,7 +143,7 @@ Evaluates the numerical columns for **multicollinearity**, which is a critical s
 > **What is Multicollinearity?** Multicollinearity happens when two or more columns in your dataset are highly correlated—meaning they give the machine learning model the exact same redundant information. (For example, having both "Year of Birth" and "Age" in the same dataset).
 > 
 > **Understanding VIF (Variance Inflation Factor):**
-> KPX calculates a VIF score to detect this redundancy:
+> QPX calculates a VIF score to detect this redundancy:
 > - **VIF < 5:** `Keep` (The column is mathematically unique).
 > - **VIF 5 - 10:** `Review` (Moderate correlation, proceed with caution).
 > - **VIF > 10:** `Consider Removing` (Severe redundancy, you should probably drop this column).

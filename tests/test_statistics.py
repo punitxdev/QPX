@@ -1,5 +1,5 @@
 import pytest
-from kpx.tabular import statistics
+from qpx.tabular import statistics
 
 def test_numeric_summary(clean_df):
     summary = statistics.numeric_summary(clean_df)

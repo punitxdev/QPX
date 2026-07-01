@@ -1,14 +1,14 @@
-# Welcome to KPX
+# Welcome to QPX
 
-**KPX (Kashyap Preprocessing Xpress)** is an advanced, automated machine learning and data processing toolkit designed to simplify and accelerate the modern data science workflow. 
+**QPX (Kashyap Preprocessing Xpress)** is an advanced, automated machine learning and data processing toolkit designed to simplify and accelerate the modern data science workflow. 
 
-Instead of writing hundreds of lines of boilerplate code for every new project, KPX provides you with robust, production-ready pipelines that clean, diagnose, and optimize your data in just a few lines of code. **Built on top of industry-standard libraries like `pandas`, `numpy`, `scikit-learn`, and `matplotlib`/`seaborn`, KPX drastically reduces developer effort and accelerates the entire data preprocessing lifecycle.**
+Instead of writing hundreds of lines of boilerplate code for every new project, QPX provides you with robust, production-ready pipelines that clean, diagnose, and optimize your data in just a few lines of code. **Built on top of industry-standard libraries like `pandas`, `numpy`, `scikit-learn`, and `matplotlib`/`seaborn`, QPX drastically reduces developer effort and accelerates the entire data preprocessing lifecycle.**
 
 ---
 
-## Why KPX?
+## Why QPX?
 
-The modern data science pipeline is often bogged down by repetitive, manual tasks. KPX solves this through **intelligent automation with complete transparency**.
+The modern data science pipeline is often bogged down by repetitive, manual tasks. QPX solves this through **intelligent automation with complete transparency**.
 
 - **Smart Automation**: Automatically detect disguised numeric columns, drop useless zero-variance features, and fix high-cardinality issues without lifting a finger.
 - **Safe & Transparent**: Every automated pipeline returns a comprehensive JSON-like report detailing exactly what transformations were applied to your dataset.
@@ -19,7 +19,7 @@ The modern data science pipeline is often bogged down by repetitive, manual task
 
 ## What's in the Box?
 
-KPX is built as a modular framework. Its flagship module is **KPX Tabular** (`kpx.tabular`), a comprehensive suite dedicated to tabular data (like CSVs, SQL tables, and Excel sheets). 
+QPX is built as a modular framework. Its flagship module is **QPX Tabular** (`qpx.tabular`), a comprehensive suite dedicated to tabular data (like CSVs, SQL tables, and Excel sheets). 
 
 It unifies three critical areas of data preparation:
 
@@ -38,17 +38,17 @@ End-to-end data cleaning. A single, highly configurable pipeline that handles ev
 
 Ready to stop cleaning data manually? Here is how to get started:
 
-- **[Installation Guide](installation.md)**: How to install KPX into your environment.
-- **[5-Minute Quickstart](quickstart.md)**: See KPX in action and learn how to run the flagship pipeline on your own data immediately.
+- **[Installation Guide](installation.md)**: How to install QPX into your environment.
+- **[5-Minute Quickstart](quickstart.md)**: See QPX in action and learn how to run the flagship pipeline on your own data immediately.
 - **[Tabular Overview](user_guide/tabular/overview.md)**: A deeper dive into how the `Tabular` wrapper class works under the hood.
 
 ---
 
 ## About the Author
 
-**Punit Kashyap** is the creator and lead developer of KPX. Currently a student at **IIT Dharwad**, Punit has a strong focus on artificial intelligence, data engineering, and intelligent automation. 
+**Punit Kashyap** is the creator and lead developer of QPX. Currently a student at **IIT Dharwad**, Punit has a strong focus on artificial intelligence, data engineering, and intelligent automation. 
 
-Dedicated to creating institutional-quality software, KPX is a reflection of Punit's commitment to technical rigor, efficiency, and developer experience. The goal of KPX is to push the boundaries of algorithmic processing and provide professionals with highly optimized, user-friendly tools.
+Dedicated to creating institutional-quality software, QPX is a reflection of Punit's commitment to technical rigor, efficiency, and developer experience. The goal of QPX is to push the boundaries of algorithmic processing and provide professionals with highly optimized, user-friendly tools.
 
 ---
 *Built with passion to accelerate preprocessing, drastically reduce model development time, and make data science easier for everyone.*

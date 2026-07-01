@@ -1,8 +1,8 @@
-# KPX Tabular: Overview
+# QPX Tabular: Overview
 
-Welcome to the **KPX Tabular** user guide! 
+Welcome to the **QPX Tabular** user guide! 
 
-The `kpx.tabular` module is the flagship component of the KPX framework, specifically engineered to take the pain out of tabular data analysis and preparation. Whether you are dealing with a messy CSV full of hidden data types or preparing a clean DataFrame for a machine learning model, KPX Tabular provides the tools you need.
+The `qpx.tabular` module is the flagship component of the QPX framework, specifically engineered to take the pain out of tabular data analysis and preparation. Whether you are dealing with a messy CSV full of hidden data types or preparing a clean DataFrame for a machine learning model, QPX Tabular provides the tools you need.
 
 ## The `Tabular` Class
 
@@ -14,11 +14,11 @@ At the heart of this module is the `Tabular` class. It acts as a wrapper around 
 
 ### Initialization
 
-To start using KPX Tabular, simply import the class and pass in your `pandas.DataFrame`.
+To start using QPX Tabular, simply import the class and pass in your `pandas.DataFrame`.
 
 ```python
 import pandas as pd
-from kpx import Tabular
+from qpx import Tabular
 
 # 1. Load your raw data
 df = pd.read_csv('my_messy_dataset.csv')
@@ -31,7 +31,7 @@ Upon initialization, the `Tabular` class automatically categorizes your DataFram
 
 ---
 
-## The Three Pillars of KPX Tabular
+## The Three Pillars of QPX Tabular
 
 ### 1. Analytical Profiling
 Before cleaning your data, you need to understand it. The analytical functions provide a bird's-eye view of your dataset. You can quickly check for missing values, duplicate rows, empty columns, and assess whether your dataset is structurally ready for machine learning.
@@ -42,7 +42,7 @@ Go deeper into the numbers. These methods allow you to pinpoint highly correlate
 - *Key Methods*: `numeric_summary()`, `multicollinearity_report()`, `outlier_summary()`
 
 ### 3. Automated Preprocessing
-The most powerful feature of KPX Tabular. Instead of writing dozens of lines of pandas code to handle string manipulation, missing value imputation, and categorical encoding, you can run a single automated pipeline or invoke specific transformations manually.
+The most powerful feature of QPX Tabular. Instead of writing dozens of lines of pandas code to handle string manipulation, missing value imputation, and categorical encoding, you can run a single automated pipeline or invoke specific transformations manually.
 - *Key Methods*: `auto_preprocess()`, `smart_fill()`, `auto_encode()`, `compress_dtype()`
 
 ## What's Next?

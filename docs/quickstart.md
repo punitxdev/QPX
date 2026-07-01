@@ -1,21 +1,21 @@
 # Quickstart Guide
 
-Get up and running with **KPX (Kashyap Preprocessing Xpress)** in under 5 minutes. This guide will walk you through the fastest way to profile, diagnose, and clean a dataset using the flagship `Tabular` module.
+Get up and running with **QPX (Kashyap Preprocessing Xpress)** in under 5 minutes. This guide will walk you through the fastest way to profile, diagnose, and clean a dataset using the flagship `Tabular` module.
 
 ---
 
 ## 1. Initialization
 
-KPX is built to work seamlessly with `pandas`. To get started, simply load your dataset as a pandas DataFrame and pass it to the `Tabular` wrapper class.
+QPX is built to work seamlessly with `pandas`. To get started, simply load your dataset as a pandas DataFrame and pass it to the `Tabular` wrapper class.
 
 ```python
 import pandas as pd
-from kpx import Tabular
+from qpx import Tabular
 
 # 1. Load your raw data
 df = pd.read_csv("my_messy_data.csv")
 
-# 2. Initialize the KPX Tabular environment
+# 2. Initialize the QPX Tabular environment
 tab = Tabular(df)
 ```
 
@@ -23,7 +23,7 @@ tab = Tabular(df)
 
 ## 2. Understand Your Data Instantly
 
-Before cleaning data, you need to understand what's wrong with it. KPX provides two powerful methods to give you an instant bird's-eye view of your dataset.
+Before cleaning data, you need to understand what's wrong with it. QPX provides two powerful methods to give you an instant bird's-eye view of your dataset.
 
 ### The High-Level Summary
 Use the `summary()` method to get a quick snapshot of your dataset's shape, memory footprint, and column types.
@@ -76,7 +76,7 @@ print(json.dumps(health_report, indent=2))
 
 You don't need to write hundreds of lines of code to handle missing values, encode text, and compress memory. 
 
-The **`auto_preprocess()`** method is KPX's flagship pipeline. It automatically runs 9 standard data science cleaning steps in the correct order, returning a clean DataFrame and a comprehensive log of exactly what was changed. After applying this function, also check the dataset again and modify as per your need.
+The **`auto_preprocess()`** method is QPX's flagship pipeline. It automatically runs 9 standard data science cleaning steps in the correct order, returning a clean DataFrame and a comprehensive log of exactly what was changed. After applying this function, also check the dataset again and modify as per your need.
 
 ```python
 # Run the automated pipeline
@@ -107,7 +107,7 @@ print("Memory Saved:", report["memory_saved_mb"], "MB")
 
 You now know how to run the automated pipeline! 
 
-However, KPX is highly configurable. If you want to disable certain steps in the pipeline, tweak the correlation thresholds, or run statistical methods manually, check out the detailed documentation:
+However, QPX is highly configurable. If you want to disable certain steps in the pipeline, tweak the correlation thresholds, or run statistical methods manually, check out the detailed documentation:
 
 - [Analytical Profiling (Summary)](user_guide/tabular/summary.md)
 - [Statistical Diagnostics (Statistics)](user_guide/tabular/statistics.md)

@@ -1,5 +1,5 @@
 import pytest
-from kpx.tabular import summary
+from qpx.tabular import summary
 
 def test_shape(clean_df):
     assert summary.shape(clean_df) == (5, 4)

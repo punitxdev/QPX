@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 
-# Set a premium global theme for KPX visualizations
+# Set a premium global theme for QPX visualizations
 sns.set_theme(style="whitegrid", context="notebook", font_scale=1.05)
 
 
