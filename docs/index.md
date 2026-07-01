@@ -4,7 +4,7 @@
   <img src="assets/qpx_logo.png" alt="QPX Logo" width="350"/>
 </p>
 
-**QPX (Kashyap Preprocessing Xpress)** is an advanced, automated machine learning and data processing toolkit designed to simplify and accelerate the modern data science workflow. 
+**QPX (Quick processing Xpress)** is an advanced, automated machine learning and data processing toolkit designed to simplify and accelerate the modern data science workflow. 
 
 Instead of writing hundreds of lines of boilerplate code for every new project, QPX provides you with robust, production-ready pipelines that clean, diagnose, and optimize your data in just a few lines of code. **Built on top of industry-standard libraries like `pandas`, `numpy`, `scikit-learn`, and `matplotlib`/`seaborn`, QPX drastically reduces developer effort and accelerates the entire data preprocessing lifecycle.**
 

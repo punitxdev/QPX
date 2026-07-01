@@ -1,6 +1,6 @@
 # Quickstart Guide
 
-Get up and running with **QPX (Kashyap Preprocessing Xpress)** in under 5 minutes. This guide will walk you through the fastest way to profile, diagnose, and clean a dataset using the flagship `Tabular` module.
+Get up and running with **QPX (Quick processing Xpress)** in under 5 minutes. This guide will walk you through the fastest way to profile, diagnose, and clean a dataset using the flagship `Tabular` module.
 
 ---
 
