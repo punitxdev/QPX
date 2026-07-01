@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kpx"
+version = "0.1.0"
+description = "A powerful, production-ready tabular data preprocessing and visualization library."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Punit" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+dependencies = [
+    "pandas>=1.5.0",
+    "numpy>=1.21.0",
+    "matplotlib>=3.5.0",
+    "seaborn>=0.11.0",
+    "scipy>=1.7.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "mkdocs>=1.4.0",
+    "mkdocs-material>=9.0.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/punitxdev/KPX"
+"Bug Tracker" = "https://github.com/punitxdev/KPX/issues"
+
+[tool.setuptools.packages.find]
+include = ["kpx*"]
+exclude = ["site*", "tests*", "docs*"]

@@ -1,0 +1,66 @@
+site_name: KPX Documentation
+site_description: "Automated Data Processing Toolkit"
+site_author: "Punit Kashyap"
+copyright: "Made with ❤️ by Punit Kashyap"
+extra_css:
+  - stylesheets/extra.css
+theme:
+  name: material
+  custom_dir: docs/overrides
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  font:
+    text: Inter
+    code: Fira Code
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quickstart: quickstart.md
+  - Tabular Guide:
+    - Overview: user_guide/tabular/overview.md
+    - Recommended Workflow: user_guide/tabular/workflow.md
+    - Summary (Profiling): user_guide/tabular/summary.md
+    - Statistics: user_guide/tabular/statistics.md
+    - Preprocessing: user_guide/tabular/preprocessing.md
+    - Visuals: user_guide/tabular/visuals.md
+    - API Reference: user_guide/tabular/api_reference.md
