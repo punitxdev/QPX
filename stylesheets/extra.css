@@ -1,0 +1,58 @@
+/* Hide the logo from the top navigation bar and the left sidebar since it's now in the right sidebar */
+.md-header__button.md-logo,
+.md-nav__button.md-logo {
+    display: none !important;
+}
+
+/* Premium Styling - Modern, Glassmorphism, and Fluid Animations */
+:root {
+  --md-admonition-bg-color: var(--md-default-bg-color);
+  --md-code-font-family: "Fira Code", monospace;
+  --md-text-font-family: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--md-text-font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Premium Code Blocks */
+.md-typeset pre>code {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 1.2rem;
+}
+
+/* Modern Rounded Buttons */
+.md-button {
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.md-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(var(--md-primary-color), 0.3);
+}
+
+/* Enhancing Admonitions */
+.md-typeset .admonition, .md-typeset details {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.md-typeset .admonition:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Smooth Transitions */
+.md-typeset a {
+  transition: color 0.2s ease;
+}
+
+/* Dark Mode Logo Adjustments */
+[data-md-color-scheme="slate"] img[alt="KPX Logo"],
+[data-md-color-scheme="slate"] .md-logo img {
+  filter: invert(1) hue-rotate(180deg) brightness(1.5);
+}

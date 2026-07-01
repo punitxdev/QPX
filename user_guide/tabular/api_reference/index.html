@@ -1,0 +1,1957 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Automated Data Processing Toolkit">
+      
+      
+        <meta name="author" content="Punit Kashyap">
+      
+      
+      
+        <link rel="prev" href="../visuals/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>API Reference - KPX Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-reference-kpxtabular" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="KPX Documentation" class="md-header__button md-logo" aria-label="KPX Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            KPX Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              API Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../installation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../quickstart/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quickstart
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
+          
+  
+  
+  Tabular Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+  
+    
+    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+          
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="KPX Documentation" class="md-nav__button md-logo" aria-label="KPX Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    KPX Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quickstart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabular Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tabular Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recommended Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summary (Profiling)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../statistics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Statistics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preprocessing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preprocessing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visuals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visuals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-class-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Class Initialization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Class Initialization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__init__self-df" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __init__(self, df)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-analytical-profiling-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Analytical Profiling (summary)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Analytical Profiling (summary)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        shape()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#num_rows-num_columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        num_rows() / num_columns()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column_names" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        column_names()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column_types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        column_types()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numerical_columns-bool_columns-categorical_columns-datetime_columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        numerical_columns() / bool_columns() / categorical_columns() / datetime_columns()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory_usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        memory_usage()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset_info" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dataset_info()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        summary()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature_overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        feature_overview()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset_health" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dataset_health()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ml_readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ml_readiness()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column_profilecolumn_namesnone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        column_profile(column_names=None)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-statistical-diagnostics-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Statistical Diagnostics (statistics)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Statistical Diagnostics (statistics)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#numeric_summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        numeric_summary()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#categorical_summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        categorical_summary()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outlier_summarydetailedfalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        outlier_summary(detailed=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multicollinearity_report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        multicollinearity_report()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical_snapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        statistical_snapshot()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-data-preprocessing-preprocessing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Data Preprocessing (preprocessing)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Data Preprocessing (preprocessing)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sanitize_col_namescasesnake-remove_special_charstrue-replace_spaces_-ensure_uniquetrue-return_mappingfalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sanitize_col_names(case="snake", remove_special_chars=True, replace_spaces="_", ensure_unique=True, return_mapping=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolifycolumnsnone-true_valuetrue-false_valuefalse-return_infofalse-inplacefalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        boolify(columns=None, true_value=True, false_value=False, return_info=False, inplace=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drop_constantcolumnsnone-ignore_natrue-return_infofalse-inplacefalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        drop_constant(columns=None, ignore_na=True, return_info=False, inplace=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label_encodecolumnsnone-inplacefalse-return_mappingfalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        label_encode(columns=None, inplace=False, return_mapping=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one_hot_encodecolumnsnone-inplacefalse-return_infofalse-drop_originalfalse-max_unique20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        one_hot_encode(columns=None, inplace=False, return_info=False, drop_original=False, max_unique=20)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ordinal_encodeorder-inplacefalse-return_mappingtrue-stricttrue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ordinal_encode(order, inplace=False, return_mapping=True, strict=True)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto_encodecolumnsnone-ordernone-max_onehot10-inplacefalse-return_reportfalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        auto_encode(columns=None, order=None, max_onehot=10, inplace=False, return_report=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compress_dtypecolumnsnone-downcast_inttrue-downcast_floattrue-convert_categorytrue-category_threshold05-inplacefalse-return_reportfalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        compress_dtype(columns=None, downcast_int=True, downcast_float=True, convert_category=True, category_threshold=0.5, inplace=False, return_report=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smart_fillcolumnsnone-strategyauto-valuenone-missing_threshold06-inplacefalse-return_reportfalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        smart_fill(columns=None, strategy="auto", value=None, missing_threshold=0.6, inplace=False, return_report=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drop_high_cardinalitycolumnsnone-threshold08-return_infofalse-inplacefalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        drop_high_cardinality(columns=None, threshold=0.8, return_info=False, inplace=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drop_highly_correlatedthreshold09-methodpearson-target_colnone-return_infofalse-inplacefalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        drop_highly_correlated(threshold=0.9, method="pearson", target_col=None, return_info=False, inplace=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto_preprocess" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        auto_preprocess(...)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-data-visualization-visuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Data Visualization (visuals)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Data Visualization (visuals)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#corr_maptargetnone-ignore_colsnone-methodspearman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        corr_map(target=None, ignore_cols=None, method="spearman")
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pca_plotinput_colsnone-targetnone-n_components2-sample_spacenone-figsize8-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pca_plot(input_cols=None, target=None, n_components=2, sample_space=None, figsize=(8, 6))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relationship_maptarget-input_colsnone-ignore_colsnone-sample_space1000-figsize9-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        relationship_map(target, input_cols=None, ignore_cols=None, sample_space=1000, figsize=(9, 7))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribution_mapcolsnone-ignore_colsnone-sample_space1000-figsize8-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        distribution_map(cols=None, ignore_cols=None, sample_space=1000, figsize=(8, 6))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature_cluster_mapignore_colsnone-methodspearman-figsize10-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        feature_cluster_map(ignore_cols=None, method="spearman", figsize=(10, 10))
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+        </div>
+      </div>
+    </div>
+  
+  
+    
+    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+          <!-- Inject logo directly into the secondary sidebar container -->
+          <div style="text-align: center; padding: 1.5rem 1rem 0 1rem;">
+            <a href="../../../">
+              <img src="../../../assets/logo.png" alt="KPX Logo" style="max-width: 150px; height: auto;">
+            </a>
+          </div>
+          
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-class-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Class Initialization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Class Initialization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__init__self-df" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __init__(self, df)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-analytical-profiling-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Analytical Profiling (summary)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Analytical Profiling (summary)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        shape()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#num_rows-num_columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        num_rows() / num_columns()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column_names" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        column_names()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column_types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        column_types()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numerical_columns-bool_columns-categorical_columns-datetime_columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        numerical_columns() / bool_columns() / categorical_columns() / datetime_columns()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory_usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        memory_usage()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset_info" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dataset_info()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        summary()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature_overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        feature_overview()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset_health" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dataset_health()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ml_readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ml_readiness()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column_profilecolumn_namesnone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        column_profile(column_names=None)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-statistical-diagnostics-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Statistical Diagnostics (statistics)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Statistical Diagnostics (statistics)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#numeric_summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        numeric_summary()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#categorical_summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        categorical_summary()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outlier_summarydetailedfalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        outlier_summary(detailed=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multicollinearity_report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        multicollinearity_report()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical_snapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        statistical_snapshot()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-data-preprocessing-preprocessing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Data Preprocessing (preprocessing)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Data Preprocessing (preprocessing)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sanitize_col_namescasesnake-remove_special_charstrue-replace_spaces_-ensure_uniquetrue-return_mappingfalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sanitize_col_names(case="snake", remove_special_chars=True, replace_spaces="_", ensure_unique=True, return_mapping=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolifycolumnsnone-true_valuetrue-false_valuefalse-return_infofalse-inplacefalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        boolify(columns=None, true_value=True, false_value=False, return_info=False, inplace=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drop_constantcolumnsnone-ignore_natrue-return_infofalse-inplacefalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        drop_constant(columns=None, ignore_na=True, return_info=False, inplace=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label_encodecolumnsnone-inplacefalse-return_mappingfalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        label_encode(columns=None, inplace=False, return_mapping=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one_hot_encodecolumnsnone-inplacefalse-return_infofalse-drop_originalfalse-max_unique20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        one_hot_encode(columns=None, inplace=False, return_info=False, drop_original=False, max_unique=20)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ordinal_encodeorder-inplacefalse-return_mappingtrue-stricttrue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ordinal_encode(order, inplace=False, return_mapping=True, strict=True)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto_encodecolumnsnone-ordernone-max_onehot10-inplacefalse-return_reportfalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        auto_encode(columns=None, order=None, max_onehot=10, inplace=False, return_report=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compress_dtypecolumnsnone-downcast_inttrue-downcast_floattrue-convert_categorytrue-category_threshold05-inplacefalse-return_reportfalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        compress_dtype(columns=None, downcast_int=True, downcast_float=True, convert_category=True, category_threshold=0.5, inplace=False, return_report=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smart_fillcolumnsnone-strategyauto-valuenone-missing_threshold06-inplacefalse-return_reportfalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        smart_fill(columns=None, strategy="auto", value=None, missing_threshold=0.6, inplace=False, return_report=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drop_high_cardinalitycolumnsnone-threshold08-return_infofalse-inplacefalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        drop_high_cardinality(columns=None, threshold=0.8, return_info=False, inplace=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drop_highly_correlatedthreshold09-methodpearson-target_colnone-return_infofalse-inplacefalse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        drop_highly_correlated(threshold=0.9, method="pearson", target_col=None, return_info=False, inplace=False)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto_preprocess" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        auto_preprocess(...)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-data-visualization-visuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Data Visualization (visuals)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Data Visualization (visuals)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#corr_maptargetnone-ignore_colsnone-methodspearman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        corr_map(target=None, ignore_cols=None, method="spearman")
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pca_plotinput_colsnone-targetnone-n_components2-sample_spacenone-figsize8-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pca_plot(input_cols=None, target=None, n_components=2, sample_space=None, figsize=(8, 6))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relationship_maptarget-input_colsnone-ignore_colsnone-sample_space1000-figsize9-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        relationship_map(target, input_cols=None, ignore_cols=None, sample_space=1000, figsize=(9, 7))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribution_mapcolsnone-ignore_colsnone-sample_space1000-figsize8-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        distribution_map(cols=None, ignore_cols=None, sample_space=1000, figsize=(8, 6))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature_cluster_mapignore_colsnone-methodspearman-figsize10-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        feature_cluster_map(ignore_cols=None, method="spearman", figsize=(10, 10))
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+        </div>
+      </div>
+    </div>
+  
+
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="api-reference-kpxtabular">API Reference: <code>kpx.Tabular</code></h1>
+<p>This document serves as the comprehensive API reference for the <code>kpx.Tabular</code> wrapper class. Below you will find the exact method signatures, parameters, and return types for every function available.</p>
+<hr />
+<h2 id="1-class-initialization">1. Class Initialization</h2>
+<h3 id="__init__self-df"><code>__init__(self, df)</code></h3>
+<p>Initializes the Tabular wrapper around a pandas DataFrame.
+- <strong><code>df</code></strong> <em>(pd.DataFrame)</em>: The raw dataset to process.</p>
+<hr />
+<h2 id="2-analytical-profiling-summary">2. Analytical Profiling (<code>summary</code>)</h2>
+<h3 id="shape"><code>shape()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(tuple)</em> A tuple containing <code>(num_rows, num_columns)</code>.</li>
+</ul>
+<h3 id="num_rows-num_columns"><code>num_rows()</code> / <code>num_columns()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(int)</em> The integer count of rows or columns.</li>
+</ul>
+<h3 id="column_names"><code>column_names()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(list)</em> A list of all column headers in the DataFrame.</li>
+</ul>
+<h3 id="column_types"><code>column_types()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(dict)</em> A mapping of <code>{column_name: string_dtype}</code>.</li>
+</ul>
+<h3 id="numerical_columns-bool_columns-categorical_columns-datetime_columns"><code>numerical_columns()</code> / <code>bool_columns()</code> / <code>categorical_columns()</code> / <code>datetime_columns()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(list)</em> A list of column names that match the specified data type.</li>
+</ul>
+<h3 id="memory_usage"><code>memory_usage()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(str)</em> A human-readable string representing the memory footprint (e.g., <code>"15.2 MB"</code>).</li>
+</ul>
+<h3 id="dataset_info"><code>dataset_info()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(dict)</em> A lightweight dictionary containing core metrics (rows, columns, missing count, memory).</li>
+</ul>
+<h3 id="summary"><code>summary()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(dict)</em> A higher-level summary aggregating missing percentages, categorical counts, and numerical counts.</li>
+</ul>
+<h3 id="feature_overview"><code>feature_overview()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(pd.DataFrame)</em> A detailed DataFrame where the index represents your columns and the columns contain metadata (Missing %, Unique values, Memory usage).</li>
+</ul>
+<h3 id="dataset_health"><code>dataset_health()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(dict)</em> A health scorecard analyzing critical flaws like zero-variance columns and high missing rates.</li>
+</ul>
+<h3 id="ml_readiness"><code>ml_readiness()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(dict)</em> A strict pass/fail assessment determining if the data can be fed into an ML algorithm (checks for nulls, non-numeric types, etc.).</li>
+</ul>
+<h3 id="column_profilecolumn_namesnone"><code>column_profile(column_names=None)</code></h3>
+<ul>
+<li><strong><code>column_names</code></strong> <em>(list, optional)</em>: Specific columns to profile. If None, profiles all.</li>
+<li><strong>Returns</strong>: <em>(dict)</em> A deep statistical and structural dictionary profile for the specified features.</li>
+</ul>
+<hr />
+<h2 id="3-statistical-diagnostics-statistics">3. Statistical Diagnostics (<code>statistics</code>)</h2>
+<h3 id="numeric_summary"><code>numeric_summary()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(pd.DataFrame)</em> Statistical summary of numerical data (mean, median, std, skewness, kurtosis, IQR).</li>
+</ul>
+<h3 id="categorical_summary"><code>categorical_summary()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(pd.DataFrame)</em> Statistical summary of categorical data (mode, unique count, top frequency).</li>
+</ul>
+<h3 id="outlier_summarydetailedfalse"><code>outlier_summary(detailed=False)</code></h3>
+<ul>
+<li><strong><code>detailed</code></strong> <em>(bool, default=False)</em>: If True, returns a dictionary containing the actual outlier index locations. If False, returns a DataFrame with outlier counts.</li>
+<li><strong>Returns</strong>: <em>(pd.DataFrame or dict)</em> Outlier assessment based on IQR bounds.</li>
+</ul>
+<h3 id="multicollinearity_report"><code>multicollinearity_report()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(pd.DataFrame)</em> Variance Inflation Factor (VIF) for all numerical features to detect multicollinearity.</li>
+<li><strong>Raises</strong>: <code>ValueError</code> if the dataset contains less than two numerical features.</li>
+</ul>
+<h3 id="statistical_snapshot"><code>statistical_snapshot()</code></h3>
+<ul>
+<li><strong>Returns</strong>: <em>(dict)</em> A master dictionary combining <code>numeric_summary</code>, <code>categorical_summary</code>, and <code>outlier_summary</code>.</li>
+</ul>
+<hr />
+<h2 id="4-data-preprocessing-preprocessing">4. Data Preprocessing (<code>preprocessing</code>)</h2>
+<h3 id="sanitize_col_namescasesnake-remove_special_charstrue-replace_spaces_-ensure_uniquetrue-return_mappingfalse"><code>sanitize_col_names(case="snake", remove_special_chars=True, replace_spaces="_", ensure_unique=True, return_mapping=False)</code></h3>
+<ul>
+<li><strong>Parameters</strong>: Modifies column headers to be machine-readable.</li>
+<li><strong>Returns</strong>: <em>(dict or None)</em> Mapping of old to new names if requested. Modifies DataFrame in place.</li>
+</ul>
+<h3 id="boolifycolumnsnone-true_valuetrue-false_valuefalse-return_infofalse-inplacefalse"><code>boolify(columns=None, true_value=True, false_value=False, return_info=False, inplace=False)</code></h3>
+<ul>
+<li><strong>Parameters</strong>: Casts pseudo-boolean object columns into strict boolean types.</li>
+<li><strong>Returns</strong>: <em>(dict or DataFrame)</em> Depending on <code>inplace</code> and <code>return_info</code>.</li>
+<li><strong>Raises</strong>: <code>KeyError</code> if an explicitly provided column is not found in the DataFrame.</li>
+</ul>
+<h3 id="drop_constantcolumnsnone-ignore_natrue-return_infofalse-inplacefalse"><code>drop_constant(columns=None, ignore_na=True, return_info=False, inplace=False)</code></h3>
+<ul>
+<li><strong>Parameters</strong>: Drops columns with zero variance (only 1 unique value).</li>
+<li><strong>Returns</strong>: <em>(dict or DataFrame)</em>.</li>
+</ul>
+<h3 id="label_encodecolumnsnone-inplacefalse-return_mappingfalse"><code>label_encode(columns=None, inplace=False, return_mapping=False)</code></h3>
+<ul>
+<li><strong>Parameters</strong>: Numerically encodes categorical text variables using numerical labels.</li>
+<li><strong>Returns</strong>: <em>(dict or DataFrame)</em>.</li>
+<li><strong>Raises</strong>: <code>KeyError</code> if an explicitly provided column is not found in the DataFrame.</li>
+</ul>
+<h3 id="one_hot_encodecolumnsnone-inplacefalse-return_infofalse-drop_originalfalse-max_unique20"><code>one_hot_encode(columns=None, inplace=False, return_info=False, drop_original=False, max_unique=20)</code></h3>
+<ul>
+<li><strong>Parameters</strong>: Creates binary dummy variables for categories up to <code>max_unique</code> threshold.</li>
+<li><strong>Returns</strong>: <em>(dict or DataFrame)</em>.</li>
+<li><strong>Raises</strong>: <code>KeyError</code> if an explicitly provided column is not found in the DataFrame.</li>
+</ul>
+<h3 id="ordinal_encodeorder-inplacefalse-return_mappingtrue-stricttrue"><code>ordinal_encode(order, inplace=False, return_mapping=True, strict=True)</code></h3>
+<ul>
+<li><strong>Parameters</strong>: <code>order</code> <em>(dict)</em> Mapping of <code>{column: [hierarchical_list]}</code>.</li>
+<li><strong>Returns</strong>: <em>(dict or DataFrame)</em>.</li>
+<li><strong>Raises</strong>: <code>KeyError</code> if a column in <code>order</code> is not found. <code>ValueError</code> if <code>strict=True</code> and unknown categories are encountered.</li>
+</ul>
+<h3 id="auto_encodecolumnsnone-ordernone-max_onehot10-inplacefalse-return_reportfalse"><code>auto_encode(columns=None, order=None, max_onehot=10, inplace=False, return_report=False)</code></h3>
+<ul>
+<li><strong>Parameters</strong>: Intelligently decides between one-hot and label encoding based on the cardinality of the column.</li>
+<li><strong>Returns</strong>: <em>(dict or DataFrame)</em>.</li>
+<li><strong>Raises</strong>: <code>KeyError</code> if an explicitly provided column is not found in the DataFrame.</li>
+</ul>
+<h3 id="compress_dtypecolumnsnone-downcast_inttrue-downcast_floattrue-convert_categorytrue-category_threshold05-inplacefalse-return_reportfalse"><code>compress_dtype(columns=None, downcast_int=True, downcast_float=True, convert_category=True, category_threshold=0.5, inplace=False, return_report=False)</code></h3>
+<ul>
+<li><strong>Parameters</strong>: Slashes memory footprint by safely downcasting bit-precision (e.g., float64 to float32).</li>
+<li><strong>Returns</strong>: <em>(dict or DataFrame)</em>.</li>
+<li><strong>Raises</strong>: <code>KeyError</code> if an explicitly provided column is not found in the DataFrame.</li>
+</ul>
+<h3 id="smart_fillcolumnsnone-strategyauto-valuenone-missing_threshold06-inplacefalse-return_reportfalse"><code>smart_fill(columns=None, strategy="auto", value=None, missing_threshold=0.6, inplace=False, return_report=False)</code></h3>
+<ul>
+<li><strong>Parameters</strong>: Imputes NaNs using median for numerics, mode for categoricals, or drops columns exceeding <code>missing_threshold</code>.</li>
+<li><strong>Returns</strong>: <em>(dict or DataFrame)</em>.</li>
+<li><strong>Raises</strong>: <code>KeyError</code> if an explicitly provided column is not found in the DataFrame.</li>
+</ul>
+<h3 id="drop_high_cardinalitycolumnsnone-threshold08-return_infofalse-inplacefalse"><code>drop_high_cardinality(columns=None, threshold=0.8, return_info=False, inplace=False)</code></h3>
+<ul>
+<li><strong>Parameters</strong>: Drops nominal columns like IDs/Names where unique count / total rows &gt; <code>threshold</code>.</li>
+<li><strong>Returns</strong>: <em>(dict or DataFrame)</em>.</li>
+<li><strong>Raises</strong>: <code>KeyError</code> if an explicitly provided column is not found in the DataFrame.</li>
+</ul>
+<h3 id="drop_highly_correlatedthreshold09-methodpearson-target_colnone-return_infofalse-inplacefalse"><code>drop_highly_correlated(threshold=0.9, method="pearson", target_col=None, return_info=False, inplace=False)</code></h3>
+<ul>
+<li><strong>Parameters</strong>: Prevents multicollinearity by dropping one feature from pairs that correlate above <code>threshold</code>. If <code>target_col</code> is provided, keeps the feature most correlated with the target.</li>
+<li><strong>Returns</strong>: <em>(dict or DataFrame)</em>.</li>
+</ul>
+<h3 id="auto_preprocess"><code>auto_preprocess(...)</code></h3>
+<p><div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">auto_preprocess</span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">target_col</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sanitize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cast_numeric</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">drop_const</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">drop_high_cardinality_cols</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">drop_correlated_cols</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">boolify_cols</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fill_nan</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">encode</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">compress</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">missing_threshold</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">high_cardinality_threshold</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> 
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">correlation_threshold</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">max_onehot</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">return_report</span><span class="o">=</span><span class="kc">False</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">)</span>
+</span></code></pre></div>
+- <strong>Returns</strong>: <em>(dict or DataFrame)</em> The flagship automated data cleaning pipeline.</p>
+<hr />
+<h2 id="5-data-visualization-visuals">5. Data Visualization (<code>visuals</code>)</h2>
+<p><em>Note: All visualization methods render directly using matplotlib/seaborn and do not return data objects.</em></p>
+<h3 id="corr_maptargetnone-ignore_colsnone-methodspearman"><code>corr_map(target=None, ignore_cols=None, method="spearman")</code></h3>
+<ul>
+<li><strong><code>target</code></strong> <em>(str, optional)</em>: Specific target column to isolate correlations against.</li>
+<li><strong><code>ignore_cols</code></strong> <em>(list, optional)</em>: Columns to skip.</li>
+<li><strong><code>method</code></strong> <em>(str, default="spearman")</em>: Correlation method (<code>pearson</code>, <code>kendall</code>, <code>spearman</code>).</li>
+<li><strong>Raises</strong>: <code>ValueError</code> if <code>target</code> is provided but is not a numeric column.</li>
+</ul>
+<h3 id="pca_plotinput_colsnone-targetnone-n_components2-sample_spacenone-figsize8-6"><code>pca_plot(input_cols=None, target=None, n_components=2, sample_space=None, figsize=(8, 6))</code></h3>
+<ul>
+<li><strong><code>target</code></strong> <em>(str, optional)</em>: Target column used to color-code clusters.</li>
+<li><strong><code>n_components</code></strong> <em>(int, default=2)</em>: Accepts <code>2</code> or <code>3</code> for 2D or 3D PCA plotting.</li>
+<li><strong><code>sample_space</code></strong> <em>(int, optional)</em>: Randomly subsamples large datasets to speed up rendering.</li>
+<li><strong>Raises</strong>: <code>ValueError</code> for invalid <code>n_components</code>, missing <code>target</code> columns, insufficient numerical features, or invalid <code>sample_space</code>.</li>
+</ul>
+<h3 id="relationship_maptarget-input_colsnone-ignore_colsnone-sample_space1000-figsize9-7"><code>relationship_map(target, input_cols=None, ignore_cols=None, sample_space=1000, figsize=(9, 7))</code></h3>
+<ul>
+<li><strong><code>target</code></strong> <em>(str, required)</em>: The outcome variable to compare features against.</li>
+<li><strong><code>input_cols</code></strong> <em>(list, optional)</em>: The subset of features to compare.</li>
+<li><strong>Raises</strong>: <code>ValueError</code> if the specified <code>target</code> column is not found in the DataFrame.</li>
+</ul>
+<h3 id="distribution_mapcolsnone-ignore_colsnone-sample_space1000-figsize8-6"><code>distribution_map(cols=None, ignore_cols=None, sample_space=1000, figsize=(8, 6))</code></h3>
+<ul>
+<li><strong><code>cols</code></strong> <em>(list, optional)</em>: Features to plot distributions for. Built-in logic ignores high-cardinality IDs automatically.</li>
+</ul>
+<h3 id="feature_cluster_mapignore_colsnone-methodspearman-figsize10-10"><code>feature_cluster_map(ignore_cols=None, method="spearman", figsize=(10, 10))</code></h3>
+<ul>
+<li><strong>Parameters</strong>: Generates a hierarchically-clustered heatmap. Excellent for visually spotting multicollinearity.</li>
+<li><strong>Raises</strong>: <code>ValueError</code> if the DataFrame contains fewer than 2 numeric features.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Made with ❤️ by Punit Kashyap
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.tracking", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
