@@ -855,6 +855,14 @@ def auto_preprocess(
             if return_report:
                 report["left_no_useful"] = leftover_cols
 
+    initial_rows = len(df)
+    df.dropna(inplace=True)
+    rows_dropped = initial_rows - len(df)
+    if rows_dropped > 0:
+        warnings.warn(f"Dropped {rows_dropped} rows containing remaining missing values.")
+        if return_report:
+            report["dropped_nan_rows"] = rows_dropped
+
     if return_report:
         report["initial_shape"] = initial_shape
         report["final_shape"] = df.shape
