@@ -331,6 +331,7 @@ The flagship preprocessing method of QPX Tabular. It runs an end-to-end, highly 
 > 7. Smart-fills missing values (NaNs).
 > 8. Auto-encodes remaining categorical features.
 > 9. Compresses memory usage via downcasting.
+> 10. Drops any remaining rows that still contain missing values.
 
 **Parameters:**
 You can toggle any step of the pipeline on or off, and tweak the thresholds used in those steps:
