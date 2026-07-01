@@ -27,7 +27,7 @@
     
     
       
-        <title>Statistics - KPX Documentation</title>
+        <title>Statistics - QPX Documentation</title>
       
     
     
@@ -94,7 +94,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="KPX Documentation" class="md-header__button md-logo" aria-label="KPX Documentation" data-md-component="logo">
+    <a href="../../.." title="QPX Documentation" class="md-header__button md-logo" aria-label="QPX Documentation" data-md-component="logo">
       
   <img src="../../../assets/logo.png" alt="logo">
 
@@ -107,7 +107,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            KPX Documentation
+            QPX Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -314,12 +314,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="KPX Documentation" class="md-nav__button md-logo" aria-label="KPX Documentation" data-md-component="logo">
+    <a href="../../.." title="QPX Documentation" class="md-nav__button md-logo" aria-label="QPX Documentation" data-md-component="logo">
       
   <img src="../../../assets/logo.png" alt="logo">
 
     </a>
-    KPX Documentation
+    QPX Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -809,7 +809,7 @@
           <!-- Inject logo directly into the secondary sidebar container -->
           <div style="text-align: center; padding: 1.5rem 1rem 0 1rem;">
             <a href="../../../">
-              <img src="../../../assets/logo.png" alt="KPX Logo" style="max-width: 150px; height: auto;">
+              <img src="../../../assets/logo.png" alt="QPX Logo" style="max-width: 150px; height: auto;">
             </a>
           </div>
           
@@ -928,7 +928,7 @@
 
 
 <h1 id="statistical-diagnostics-statistics">Statistical Diagnostics (Statistics)</h1>
-<p>Once you understand the basic shape of your data, the next step is to dive deeper into the mathematical and categorical properties of your features. The <strong>Statistical Diagnostics</strong> methods in KPX Tabular provide detailed metrics, distribution insights, and collinearity checks to help you understand the statistical health of your dataset.</p>
+<p>Once you understand the basic shape of your data, the next step is to dive deeper into the mathematical and categorical properties of your features. The <strong>Statistical Diagnostics</strong> methods in QPX Tabular provide detailed metrics, distribution insights, and collinearity checks to help you understand the statistical health of your dataset.</p>
 <h2 id="available-methods-at-a-glance">Available Methods at a Glance</h2>
 <p><strong>Statistical Methods:</strong>
 - <code>statistical_snapshot()</code>
@@ -946,7 +946,7 @@
 </blockquote>
 <p><strong>Example:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">kpx</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tabular</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">qpx</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tabular</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">)</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">tab</span> <span class="o">=</span> <span class="n">Tabular</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -1024,8 +1024,8 @@ A pandas DataFrame showing counts, missing values, unique cardinalities, the mos
 <blockquote>
 <p>[!TIP]
 <strong>What is an Outlier?</strong> An outlier is a data point that is abnormally distant from the rest of the data. For example, if you are looking at customer ages ranging from 18 to 65, an age of <code>142</code> is an outlier.</p>
-<p><strong>How KPX finds them (IQR Method):</strong> 
-KPX uses the Interquartile Range (IQR). It finds the middle 50% of your data (between the 25th percentile <code>Q1</code> and 75th percentile <code>Q3</code>). Any value that falls unusually far below <code>Q1</code> (the <code>lower bound</code>) or unusually far above <code>Q3</code> (the <code>upper bound</code>) is flagged as an outlier.</p>
+<p><strong>How QPX finds them (IQR Method):</strong> 
+QPX uses the Interquartile Range (IQR). It finds the middle 50% of your data (between the 25th percentile <code>Q1</code> and 75th percentile <code>Q3</code>). Any value that falls unusually far below <code>Q1</code> (the <code>lower bound</code>) or unusually far above <code>Q3</code> (the <code>upper bound</code>) is flagged as an outlier.</p>
 </blockquote>
 <p><strong>Parameters:</strong>
 - <code>detailed</code> <em>(bool, default=False)</em>: If <code>True</code>, the output includes the exact calculations used to find the outliers (<code>Q1</code>, <code>Q3</code>, and <code>IQR</code>).</p>
@@ -1045,7 +1045,7 @@ KPX uses the Interquartile Range (IQR). It finds the middle 50% of your data (be
 <p>[!IMPORTANT]
 <strong>What is Multicollinearity?</strong> Multicollinearity happens when two or more columns in your dataset are highly correlated—meaning they give the machine learning model the exact same redundant information. (For example, having both "Year of Birth" and "Age" in the same dataset).</p>
 <p><strong>Understanding VIF (Variance Inflation Factor):</strong>
-KPX calculates a VIF score to detect this redundancy:
+QPX calculates a VIF score to detect this redundancy:
 - <strong>VIF &lt; 5:</strong> <code>Keep</code> (The column is mathematically unique).
 - <strong>VIF 5 - 10:</strong> <code>Review</code> (Moderate correlation, proceed with caution).
 - <strong>VIF &gt; 10:</strong> <code>Consider Removing</code> (Severe redundancy, you should probably drop this column).</p>

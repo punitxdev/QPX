@@ -27,7 +27,7 @@
     
     
       
-        <title>Quickstart - KPX Documentation</title>
+        <title>Quickstart - QPX Documentation</title>
       
     
     
@@ -94,7 +94,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="KPX Documentation" class="md-header__button md-logo" aria-label="KPX Documentation" data-md-component="logo">
+    <a href=".." title="QPX Documentation" class="md-header__button md-logo" aria-label="QPX Documentation" data-md-component="logo">
       
   <img src="../assets/logo.png" alt="logo">
 
@@ -107,7 +107,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            KPX Documentation
+            QPX Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -314,12 +314,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="KPX Documentation" class="md-nav__button md-logo" aria-label="KPX Documentation" data-md-component="logo">
+    <a href=".." title="QPX Documentation" class="md-nav__button md-logo" aria-label="QPX Documentation" data-md-component="logo">
       
   <img src="../assets/logo.png" alt="logo">
 
     </a>
-    KPX Documentation
+    QPX Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -795,7 +795,7 @@
           <!-- Inject logo directly into the secondary sidebar container -->
           <div style="text-align: center; padding: 1.5rem 1rem 0 1rem;">
             <a href="../">
-              <img src="../assets/logo.png" alt="KPX Logo" style="max-width: 150px; height: auto;">
+              <img src="../assets/logo.png" alt="QPX Logo" style="max-width: 150px; height: auto;">
             </a>
           </div>
           
@@ -903,22 +903,22 @@
 
 
 <h1 id="quickstart-guide">Quickstart Guide</h1>
-<p>Get up and running with <strong>KPX (Kashyap Preprocessing Xpress)</strong> in under 5 minutes. This guide will walk you through the fastest way to profile, diagnose, and clean a dataset using the flagship <code>Tabular</code> module.</p>
+<p>Get up and running with <strong>QPX (Kashyap Preprocessing Xpress)</strong> in under 5 minutes. This guide will walk you through the fastest way to profile, diagnose, and clean a dataset using the flagship <code>Tabular</code> module.</p>
 <hr />
 <h2 id="1-initialization">1. Initialization</h2>
-<p>KPX is built to work seamlessly with <code>pandas</code>. To get started, simply load your dataset as a pandas DataFrame and pass it to the <code>Tabular</code> wrapper class.</p>
+<p>QPX is built to work seamlessly with <code>pandas</code>. To get started, simply load your dataset as a pandas DataFrame and pass it to the <code>Tabular</code> wrapper class.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">kpx</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tabular</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">qpx</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tabular</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># 1. Load your raw data</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;my_messy_data.csv&quot;</span><span class="p">)</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># 2. Initialize the KPX Tabular environment</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># 2. Initialize the QPX Tabular environment</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">tab</span> <span class="o">=</span> <span class="n">Tabular</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </span></code></pre></div>
 <hr />
 <h2 id="2-understand-your-data-instantly">2. Understand Your Data Instantly</h2>
-<p>Before cleaning data, you need to understand what's wrong with it. KPX provides two powerful methods to give you an instant bird's-eye view of your dataset.</p>
+<p>Before cleaning data, you need to understand what's wrong with it. QPX provides two powerful methods to give you an instant bird's-eye view of your dataset.</p>
 <h3 id="the-high-level-summary">The High-Level Summary</h3>
 <p>Use the <code>summary()</code> method to get a quick snapshot of your dataset's shape, memory footprint, and column types.</p>
 <p><div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">tab</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
@@ -959,7 +959,7 @@
 <hr />
 <h2 id="3-the-one-liner-preprocessing-pipeline">3. The "One-Liner" Preprocessing Pipeline</h2>
 <p>You don't need to write hundreds of lines of code to handle missing values, encode text, and compress memory. </p>
-<p>The <strong><code>auto_preprocess()</code></strong> method is KPX's flagship pipeline. It automatically runs 9 standard data science cleaning steps in the correct order, returning a clean DataFrame and a comprehensive log of exactly what was changed. After applying this function, also check the dataset again and modify as per your need.</p>
+<p>The <strong><code>auto_preprocess()</code></strong> method is QPX's flagship pipeline. It automatically runs 9 standard data science cleaning steps in the correct order, returning a clean DataFrame and a comprehensive log of exactly what was changed. After applying this function, also check the dataset again and modify as per your need.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Run the automated pipeline</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">df_clean</span><span class="p">,</span> <span class="n">report</span> <span class="o">=</span> <span class="n">tab</span><span class="o">.</span><span class="n">auto_preprocess</span><span class="p">(</span><span class="n">return_report</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
@@ -985,7 +985,7 @@ By default, <code>auto_preprocess()</code> automatically:
 <hr />
 <h2 id="next-steps">Next Steps</h2>
 <p>You now know how to run the automated pipeline! </p>
-<p>However, KPX is highly configurable. If you want to disable certain steps in the pipeline, tweak the correlation thresholds, or run statistical methods manually, check out the detailed documentation:</p>
+<p>However, QPX is highly configurable. If you want to disable certain steps in the pipeline, tweak the correlation thresholds, or run statistical methods manually, check out the detailed documentation:</p>
 <ul>
 <li><a href="../user_guide/tabular/summary/">Analytical Profiling (Summary)</a></li>
 <li><a href="../user_guide/tabular/statistics/">Statistical Diagnostics (Statistics)</a></li>

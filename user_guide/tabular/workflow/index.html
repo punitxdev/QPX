@@ -27,7 +27,7 @@
     
     
       
-        <title>Recommended Workflow - KPX Documentation</title>
+        <title>Recommended Workflow - QPX Documentation</title>
       
     
     
@@ -94,7 +94,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="KPX Documentation" class="md-header__button md-logo" aria-label="KPX Documentation" data-md-component="logo">
+    <a href="../../.." title="QPX Documentation" class="md-header__button md-logo" aria-label="QPX Documentation" data-md-component="logo">
       
   <img src="../../../assets/logo.png" alt="logo">
 
@@ -107,7 +107,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            KPX Documentation
+            QPX Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -314,12 +314,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="KPX Documentation" class="md-nav__button md-logo" aria-label="KPX Documentation" data-md-component="logo">
+    <a href="../../.." title="QPX Documentation" class="md-nav__button md-logo" aria-label="QPX Documentation" data-md-component="logo">
       
   <img src="../../../assets/logo.png" alt="logo">
 
     </a>
-    KPX Documentation
+    QPX Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -770,7 +770,7 @@
           <!-- Inject logo directly into the secondary sidebar container -->
           <div style="text-align: center; padding: 1.5rem 1rem 0 1rem;">
             <a href="../../../">
-              <img src="../../../assets/logo.png" alt="KPX Logo" style="max-width: 150px; height: auto;">
+              <img src="../../../assets/logo.png" alt="QPX Logo" style="max-width: 150px; height: auto;">
             </a>
           </div>
           
@@ -850,7 +850,7 @@
 
 
 <h1 id="recommended-workflow">Recommended Workflow</h1>
-<p>To get the absolute best out of <strong>KPX Tabular</strong>, we recommend following a structured workflow that mirrors the actual machine learning lifecycle. KPX is designed to drastically minimize the code you write at each of these steps.</p>
+<p>To get the absolute best out of <strong>QPX Tabular</strong>, we recommend following a structured workflow that mirrors the actual machine learning lifecycle. QPX is designed to drastically minimize the code you write at each of these steps.</p>
 <p>Here is the ideal path from raw dataset to ML-ready data:</p>
 <h2 id="1-initial-assessment-profiling">1. Initial Assessment (Profiling)</h2>
 <p>Before altering any data, understand what you are working with.</p>
@@ -867,7 +867,7 @@
 <li><strong>Spot Multicollinearity</strong>: Run <code>tab.feature_cluster_map()</code> and <code>tab.multicollinearity_report()</code>. If you see tight clusters of highly correlated features, let the preprocessor know it needs to drop them.</li>
 </ul>
 <h2 id="3-automated-preprocessing">3. Automated Preprocessing</h2>
-<p>Now that you understand the dataset's flaws, let KPX fix them. </p>
+<p>Now that you understand the dataset's flaws, let QPX fix them. </p>
 <p>For most standard tabular datasets, a single call to <code>auto_preprocess()</code> is all you need:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># The ultimate one-liner to clean, encode, and compress</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">report</span> <span class="o">=</span> <span class="n">tab</span><span class="o">.</span><span class="n">auto_preprocess</span><span class="p">(</span>
