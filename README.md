@@ -15,7 +15,7 @@ QPX Tabular is a powerful, production-ready tabular data preprocessing and visua
 
 ## Installation
 
-To install `qpx`, you can simply clone this repository and install it locally using `pip`:
+To install `qpx-tabular` via PyPI (once published) or from source, you can simply clone this repository and install it locally using `pip`:
 
 ```bash
 git clone https://github.com/punitxdev/QPX.git

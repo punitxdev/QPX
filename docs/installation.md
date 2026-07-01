@@ -25,7 +25,7 @@ QPX heavily relies on the following core libraries for its data manipulation and
 If QPX is published to PyPI or you have a compiled wheel, you can install it directly using pip:
 
 ```bash
-pip install qpx
+pip install qpx-tabular
 ```
 
 ### 2. Install from Source (Development)
