@@ -22,8 +22,8 @@
         <div class="md-sidebar__inner">
           <!-- Inject logo directly into the secondary sidebar container -->
           <div style="text-align: center; padding: 1.5rem 1rem 0 1rem;">
-            <a href="{{ base_url }}/">
-              <img src="{{ base_url }}/assets/qpx_logo.png" alt="QPX Logo" style="max-width: 150px; height: auto;">
+            <a href="{{ nav.homepage.url | url }}">
+              <img src="{{ config.theme.logo | url }}" alt="QPX Logo" style="max-width: 150px; height: auto;">
             </a>
           </div>
           {% include "partials/toc.html" %}
