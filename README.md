@@ -1,18 +1,19 @@
 # KPX Tabular
 [![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Code Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg)]()
+[![Code Coverage](https://img.shields.io/badge/Coverage-61%25-yellow.svg)]()
+[![Documentation](https://img.shields.io/badge/Docs-Live-blue.svg)](https://punitxdev.github.io/KPX/)
 
 KPX Tabular is a powerful, production-ready tabular data preprocessing and visualization library designed to accelerate data science workflows. It turns raw, messy pandas DataFrames into machine-learning ready datasets with a single line of code.
 
-## 🚀 Features
+## Features
 
 *   **Automated Preprocessing (`auto_preprocess`)**: Automatically handles missing values, drops constants, drops high-cardinality nominals, encodes categoricals intelligently, and downcasts memory.
 *   **Fail-Loud Architecture**: Built for production. Instead of failing silently, KPX immediately alerts you (`KeyError`, `ValueError`) if you provide invalid data configurations.
 *   **Comprehensive Data Health Diagnostics**: Get 360-degree views of your dataset's health via `dataset_health` and `statistical_snapshot`.
 *   **Beautiful Visualizations**: One-line correlation heatmaps, distribution plots, and hierarchical feature clustering matrices.
 
-## 📦 Installation
+## Installation
 
 To install `kpx`, you can simply clone this repository and install it locally using `pip`:
 
@@ -29,7 +30,7 @@ pip install -e .
 - `seaborn`
 - `scipy`
 
-## 💡 Quickstart
+## Quickstart
 
 Clean an entire dataset with one function:
 
@@ -58,8 +59,11 @@ from kpx.tabular import visuals
 visuals.corr_map(clean_df, target="my_target_column")
 ```
 
-## 📚 Documentation
-Full API references and user guides can be generated locally using MkDocs:
+## Documentation
+The complete API reference and user guide is hosted online at: 
+**[https://punitxdev.github.io/KPX/](https://punitxdev.github.io/KPX/)**
+
+If you want to build the documentation locally for development:
 
 ```bash
 pip install -e .[dev]
@@ -71,7 +75,7 @@ To publish the documentation to GitHub Pages, simply run:
 mkdocs gh-deploy
 ```
 
-## 📝 License
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Made with ❤️ by Punit
+Made with love by Punit
